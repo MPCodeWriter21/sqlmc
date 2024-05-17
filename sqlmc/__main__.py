@@ -55,5 +55,12 @@ def main():
         print(f"Output saved to {args.output}")
 
 
+def run():
+    """Runs the main function."""
+    try:
+        main()
+    except KeyboardInterrupt:
+        print('KeyboardInterrupt: Exiting...')
+
 if __name__ == "__main__":
-    main()
+    run()

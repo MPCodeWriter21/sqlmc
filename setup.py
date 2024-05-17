@@ -8,7 +8,7 @@ setup(
     include_package_data=True,
     install_requires=['aiohttp', 'beautifulsoup4', 'pyfiglet', 'tabulate'],
     entry_points={'console_scripts': [
-        'sqlmc=sqlmc.__main__:main',
+        'sqlmc=sqlmc.__main__:run',
     ]},
     author='Miguel Álvarez',
     description='SQL Injection Massive Checker for a domain',
