@@ -6,17 +6,10 @@ setup(
     packages=find_packages(),
     package_data={'': ['VERSION']},
     include_package_data=True,
-    install_requires=[
-        'aiohttp',
-        'beautifulsoup4',
-        'pyfiglet',
-        'tabulate'
-    ],
-    entry_points={
-        'console_scripts': [
-            'sqlmc=sqlmc.sqlmc:main',
-        ]
-    },
+    install_requires=['aiohttp', 'beautifulsoup4', 'pyfiglet', 'tabulate'],
+    entry_points={'console_scripts': [
+        'sqlmc=sqlmc.__main__:main',
+    ]},
     author='Miguel Álvarez',
     description='SQL Injection Massive Checker for a domain',
     license='AGPL-3.0',

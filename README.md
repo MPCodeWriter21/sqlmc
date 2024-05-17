@@ -1,11 +1,17 @@
 # SQLMC - SQL Injection Massive Checker
 
+> ![WARNNING]
+> This package is mode for educational purposes and educational purposes only. Do not 
+> use it on a website unless you have full permission to do so!
+
 ## Demo
-![Alt Text](./assets/demo.gif)
+![Demo](./assets/demo.gif)
 
 
 ## Overview
-SQLMC (SQL Injection Massive Checker) is a tool designed to scan a domain for SQL injection vulnerabilities. It crawls the given URL up to a specified depth, checks each link for SQL injection vulnerabilities, and reports its findings.
+SQLMC (SQL Injection Massive Checker) is a tool designed to scan a domain for SQL
+injection vulnerabilities. It crawls the given URL up to a specified depth, checks
+each link for SQL injection vulnerabilities, and reports its findings.
 
 ## Features
 - Scans a domain for SQL injection vulnerabilities
@@ -14,9 +20,11 @@ SQLMC (SQL Injection Massive Checker) is a tool designed to scan a domain for SQ
 - Reports vulnerabilities along with server information and depth
 
 ## Installation
-1. Install the required dependencies:
+1. Clone the repository and run the `setup.py` to install:
     ```bash
-    pip3 install sqlmc
+    git clone https://github.com/MPCodeWriter21/sqlmc
+    cd sqlmc
+    python setup.py install
     ```
 
 ## Usage
@@ -33,13 +41,16 @@ Example usage:
 sqlmc -u http://example.com -d 2
 ```
 
-Replace http://example.com with the URL you want to scan and 3 with the desired depth of the scan. You can also specify an output file using the -o or --output flag followed by the desired filename.
+Replace http://example.com with the URL you want to scan and 3 with the desired depth of
+the scan. You can also specify an output file using the -o or --output flag followed by
+the desired filename.
 
 The tool will then perform the scan and display the results.
 
-## ToDo
-- Check for multiple GET params
-- Better injection checker trigger methods
+## TODO
+
+- [ ] Check for multiple GET parameters.
+- [ ] Better injection checker trigger methods
 
 ## Credits
 
